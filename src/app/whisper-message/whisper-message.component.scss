@@ -1,0 +1,30 @@
+$height: 5em;
+$rotate: rotateX(70deg);
+
+.whisper-message {
+  border: 1px solid gray;
+  width: 10em;
+  max-width: 10em;
+  text-align: center;
+
+  &-text {
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 5;
+  }
+
+  &-wrapper {
+    width: 100%;
+    max-width: 100%;
+    height: $height;
+    max-height: $height;
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    bottom: 15%;
+    position: absolute;
+    transform: $rotate scale(0.3);
+    visibility: hidden;
+  }
+}
